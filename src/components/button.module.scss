@@ -1,0 +1,35 @@
+@import "../styleSheets/theme.scss";
+
+.buttonMain {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  span {
+    font-weight: 300 !important;
+    color: $Very-Dark-Blue-Light-Mode-Text;
+  }
+}
+
+.buttonIsBold {
+  @extend .buttonMain;
+  box-shadow: none;
+
+  span {
+    font-weight: 600 !important;
+    color: $Very-Dark-Blue-Light-Mode-Text;
+  }
+}
+
+.dark {
+  @extend .buttonMain;
+  background-color: $Dark-Blue-Dark-Mode-Elements;
+  color: $White-Dark-Mode-Text-Light-Mode-Elements;
+  span {
+    color: $White-Dark-Mode-Text-Light-Mode-Elements;
+  }
+}

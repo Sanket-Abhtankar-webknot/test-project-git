@@ -1,0 +1,41 @@
+@import "../styleSheets/theme.scss";
+
+.loading {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: $White-Dark-Mode-Text-Light-Mode-Elements;
+box-shadow: -5px 0px 10px rgba(0,0,0,0.2);
+}
+
+.loadingAnimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3rem;
+}
+
+@for $i from 1 through 6 {
+  .dot_#{ 7 - $i} {
+    margin: 0 0.1rem;
+    animation: bounce 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: -#{$i * 0.12}s;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1.5);
+  }
+  50%,
+  100% {
+    transform: scale(1);
+  }
+}

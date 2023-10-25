@@ -1,0 +1,77 @@
+@import "../styleSheets/mixins";
+@import "../styleSheets/theme.scss";
+
+h2 {
+  font-size: 23px;
+  font-weight: 800;
+}
+.ItemMain {
+  padding: 70px;
+  min-height: calc(100vh - 65px);
+}
+
+.ItemNavigation {
+  margin-bottom: 70px;
+}
+
+.ItemBody {
+  display: flex;
+  gap: 100px;
+  min-height: 300px;
+
+  .ItemImage {
+    flex-basis: 900px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+.ItemDescription {
+  width: 100%;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+  span {
+    font-weight: 600;
+  }
+  .ItemDetails {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: max-content;
+    gap: 10px;
+  }
+
+  .itemBorderCountriesLinks {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 14px;
+
+    span {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      button {
+        margin-right: 10px;
+      }
+      display: flex;
+    }
+  }
+}
+
+
+.dark {
+  background-color: $Very-Dark-Blue-Dark-Mode-Background;
+  * {
+    color: $White-Dark-Mode-Text-Light-Mode-Elements;
+  }
+}

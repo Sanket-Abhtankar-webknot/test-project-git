@@ -1,0 +1,199 @@
+@import "./theme.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap');
+
+  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset all margins, paddings, and borders to zero */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+/* Reset font sizes to 100% for better compatibility */
+html {
+  font-size: 100%;
+  color: $Very-Dark-Blue-Light-Mode-Text;
+  background-color: $White-Dark-Mode-Text-Light-Mode-Elements;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Reset font styles to "normal" */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+}
+input, label {
+  color: $Dark-Gray-Light-Mode-Input;
+
+  svg {
+    fill: $Dark-Gray-Light-Mode-Input;
+  }
+  &::placeholder {
+    color: $Dark-Gray-Light-Mode-Input;
+  }
+}
+
+/* Reset line heights to "normal" */
+button,
+input,
+select,
+textarea {
+  line-height: normal;
+}
+
+/* Remove list styles (bullets/numbers) */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove underline and style links on hover/focus */
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/* Remove default button styles */
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Ensure form elements have consistent sizing */
+input,
+button,
+select,
+textarea {
+  font-size: 100%;
+}
+
+/* Remove outline on active links/buttons in many browsers */
+a:active,
+button:active {
+  outline: none;
+}
